@@ -1,1 +1,1 @@
-# CSC222-CalenderProject
+# CSC222-CalenderProject for VPCC
