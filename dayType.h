@@ -9,14 +9,14 @@ class dayType {
     public:
     dayType(int x);
 
-    void setDay(string x);
-    void printDay();
-    string getDay();
-    string previousDay();
-    string nextDay();
-    void addDay(int);
-    dayType(string x);
-    dayType();
+    void setDay(string x);      // Sets the day
+    void printDay();        // Prints the day to screen
+    string getDay();        // Returns day as string
+    string previousDay();       // Returns previous day as string
+    string nextDay();       // Returns next days as string
+    void addDay(int);       // Adds a number of days to our current set day
+    dayType(string x);      // Constructor with parameter
+    dayType();      // Default constructor - set Sunday to day
 
     private:
     string day;
