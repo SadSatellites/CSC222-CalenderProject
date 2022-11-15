@@ -8,11 +8,11 @@ using namespace std;
 
 class exDateType: public dateType {
     public:
-    void printLongDate();
-    void printLongMonthYear();
-    void setDate(int x, int y, int z);
-    void setMonth(int x);
-    exDateType(int=1, int=1, int=1900);
+    void printLongDate();       // Prints date in long form
+    void printLongMonthYear();      // Prints date in long month year form
+    void setDate(int x, int y, int z);      // Sets date
+    void setMonth(int x);       // Sets month
+    exDateType(int=1, int=1, int=1900);     // Constructor
 
     private:
     string varMonth2;
