@@ -8,6 +8,9 @@ using namespace std;
 class dateType {
     public:
     dateType();
+
+    dateType(int x, int y, int z);
+
     void setMonth(int x);       // Manually set the month
     void setDay(int y);     // Manually set the day
     void setYear(int z);        // Manually set the year

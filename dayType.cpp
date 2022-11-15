@@ -53,13 +53,17 @@ void dayType::addDay(int x) {
     int varCopy;
 
     varCopy = x;
+//    cout << "varIndex: " << varIndex << endl;     // For troubleshooting
+//    cout << "VarIndex + X: " << (varIndex + x) << endl;       // For troubleshooting
     if (x < 0) {
         cout << "Error in input! Only positive numbers." << endl;
         abort();
     }
     while ((varIndex + x) >= 7) {
         x = x - 7;
+//        cout << "x value in while loop: " << x << endl;       // For troubleshooting
     }
+//    cout << "VarIndex + X after while loop: " << (varIndex + x) << endl;      // For troubleshooting
     varNewDay = myDays[varIndex + x];
     day = myDays[varIndex + x];
     cout << "The new day +"<< varCopy << " days is: " << varNewDay << endl;

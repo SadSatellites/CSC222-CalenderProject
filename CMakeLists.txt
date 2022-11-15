@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.23)
-project(Project_5_dayType_Class_Project)
+project(Project_6_dateType_Project)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Project_5_dayType_Class_Project main.cpp dayType.h dayType.cpp)
+add_executable(Project_6_dateType_Project main.cpp dateType.cpp dateType.h dayType.cpp dayType.h exDateType.h exDateType.cpp)

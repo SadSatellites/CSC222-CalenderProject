@@ -155,3 +155,9 @@ dateType::dateType(){
     varDay = 1;
     varYear = 1900;
 }
+
+dateType::dateType(int x, int y, int z) {
+    varMonth = 1;
+    varDay = 1;
+    varYear = 1900;
+}
