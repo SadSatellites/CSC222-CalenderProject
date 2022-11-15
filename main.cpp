@@ -7,12 +7,39 @@
 using namespace std;
 
 int main() {
+//    dateType dateType;
     class exDateType exDateType;
     int varMonth, varDay, varYear, x, y;
-    cout << "\n" << endl;
 
+    cout << "Defaults: " << endl;
+    cout << exDateType.getMonth() << " | " << exDateType.getDay() << " | " << exDateType.getYear() << "\n\n" << endl;
+
+    cout << "Enter a year to test for leap year: " << endl;
+    cin >> x;
+    cout << exDateType.isLeapYear(x) << endl;
+
+    cout << "\n\nEnter a month then year to get the number of days from that month in that year: " << endl;
+    cin >> x;
+    cin >> y;
+    cout << "There are " << exDateType.getDaysInMonth(x, y) << " days." << endl;
+
+    cout << "\nChanging current working date to February 2nd, 2008" << endl;
+    exDateType.setDates(2, 2, 2008);       // Set working date to February 2nd, 2008;
+    exDateType.printDate();
+
+    cout << exDateType.daysSinceBoY() << " days have passed since the beginning of the year." << endl;
+    cout << exDateType.daysUntilEoY() << " days until the end of the year (NOT including currently set day)." << endl;
+
+    cout << "\nHow many days would you like to add to the current date of: " << exDateType.printDate() << endl;
+    cin >> x;
+    exDateType.addDays(x);
+    //// NOTE:
+    // The addDays function currently does not function properly when adding 60<= days.
+
+    cout << "\n" << endl;
     exDateType.printLongDate();
     exDateType.printLongMonthYear();
+
 
     return 0;
 }
@@ -55,40 +82,3 @@ int main() {
 //    return 0;
 //}
 
-//int main() {
-//    dateType dateType;
-//    class exDateType exDateType;
-//    int varMonth, varDay, varYear, x, y;
-//
-//    cout << "Defaults: " << endl;
-//    cout << dateType.getMonth() << " | " << dateType.getDay() << " | " << dateType.getYear() << "\n\n" << endl;
-//
-//    cout << "Enter a year to test for leap year: " << endl;
-//    cin >> x;
-//    cout << dateType.isLeapYear(x) << endl;
-//
-//    cout << "\n\nEnter a month then year to get the number of days from that month in that year: " << endl;
-//    cin >> x;
-//    cin >> y;
-//    cout << "There are " << dateType.getDaysInMonth(x, y) << " days." << endl;
-//
-//    cout << "\nChanging current working date to February 2nd, 2008" << endl;
-//    dateType.setDates(2, 2, 2008);       // Set working date to February 2nd, 2008;
-//    dateType.printDate();
-//
-//    cout << dateType.daysSinceBoY() << " days have passed since the beginning of the year." << endl;
-//    cout << dateType.daysUntilEoY() << " days until the end of the year (NOT including currently set day)." << endl;
-//
-//    cout << "\nHow many days would you like to add to the current date of: " << dateType.printDate() << endl;
-//    cin >> x;
-//    dateType.addDays(x);
-    //// NOTE:
-    //      The addDays function currently does not function properly when adding 60<= days.
-//
-//    cout << "\n" << endl;
-//    exDateType.printLongDate();
-//    exDateType.printLongMonthYear();
-//
-//
-//    return 0;
-//}
